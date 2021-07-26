@@ -1,4 +1,41 @@
 /* You can add global styles to this file, and also import other style files */
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+/* html,
+body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+} */
+
+
+/* You can add global styles to this file, and also import other style files */
+
+@import "~bootstrap/dist/css/bootstrap.css";
+body {
+    /* background-image: radial-gradient(circle at 1px 1px, white 1px, transparent 0);
+            background-size: 50px 30px;8*/
+    background-color: rgb(17, 17, 32);
+    color: white;
+}
+
+mat-tab-group {
+    background-color: thistle;
+    height: 100vh;
+}
+
+p {
+    color: black;
+    margin: 5px;
+}
+
+.card {
+    height: 200px;
+}
+
+
+/* html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; } */
