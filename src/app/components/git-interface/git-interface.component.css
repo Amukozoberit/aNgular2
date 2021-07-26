@@ -1,0 +1,20 @@
+img {
+    vertical-align: middle;
+    width: 150px;
+    height: 300px;
+    border-radius: 50%;
+}
+
+.col-4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid;
+    height: 70vh;
+}
+
+mat-tab label {
+    color: white !important;
+}
+
+a {}
