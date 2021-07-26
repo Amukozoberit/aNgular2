@@ -11,12 +11,14 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { PipePipe } from './pipe/pipe.pipe';
 import { ClickDirectiveDirective } from './directives/click-directive.directive';
+import { SearchComponent } from './Forms/search/search.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     PipePipe,
-    ClickDirectiveDirective
+    ClickDirectiveDirective,
+    SearchComponent
   ],
   imports: [
     BrowserModule,
