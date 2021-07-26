@@ -1,6 +1,24 @@
-# AngularProj
+# GitClone App
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.6.
+This project was generated with [Angular CLI](https://github.com/angular/aNgular2) version 11.2.6.
+# Author
+Mwashe Berit
+
+
+# Description
+Gitclone is a clone of github its created to enabvle users search or their profile or other users profile<br>
+## A user should be able to:
+ #### View a user profile
+ #### search for profile of user
+
+ ## The post should include:
+ #### visible profile photo
+ #### respositories
+
+
+# Project link
+https://amukozoberit.github.io/aNgular2/
+
 
 ## Development server
 
