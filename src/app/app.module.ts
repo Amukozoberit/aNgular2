@@ -10,11 +10,13 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { PipePipe } from './pipe/pipe.pipe';
+import { ClickDirectiveDirective } from './directives/click-directive.directive';
 
 @NgModule({
   declarations: [
     AppComponent,
-    PipePipe
+    PipePipe,
+    ClickDirectiveDirective
   ],
   imports: [
     BrowserModule,
