@@ -6,6 +6,7 @@ import { Pipe, PipeTransform } from '@angular/core';
 export class PipePipe implements PipeTransform {
 
   transform(value:any): any {
-    return value.slice(0,10) + " at " +value.slice(11,-1);
+    let val=value.slice(0,10) + " at " +value.slice(11,-1);
+    return val;
   }
 }

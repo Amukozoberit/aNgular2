@@ -11,6 +11,7 @@ export class DataService{
 
   gitUser: User;
   public repo:any=[];
+  results:Object[] =[];
 
 
   constructor(private http:HttpClient) {
@@ -19,7 +20,9 @@ export class DataService{
    }
 
    gitUserRequest(user:string){
-     let url=`https://api.github.com/users/${user}?access_token=${environment.acces_token}`;
+     let url=environment.url+user+'?client_id='+environment.client_id+'client_secret='+environment.client_secret;
+    //  let url=''client_id='environment.client_id+'client_secret='+environment.client_secret';
+    //  let url='https://api.github.com/users/${user}?access_token='+ `${environment.acces_token}`;
      interface ApiResponse{
        avatar_url:string;
        login:string;
@@ -55,7 +58,9 @@ export class DataService{
      return promise
    };
    repoRequest(user:string){
-    let url=`https://api.github.com/users/${user}/repos?access_token=${environment.acces_token}`
+    let url=environment.repoU+user+'/repos'+'?client_id='+environment.client_id+'client_secret='+environment.client_secret;
+    // let url=`https://api.github.com/users/${user}/repos?client_id=${environment.client_id}$client_secret=${environment.client_secret}`
+  let urll="https://api.github.com/users/Amukozoberit/repos?"
     this.repo=[];
     interface ApiResponse{
       name:string;
@@ -64,20 +69,20 @@ export class DataService{
       repo_url:string;
       language:string;
          }
-    let promise = new Promise((resolve,reject)=>{
-      return this.http.get<ApiResponse[]>(url)
-      .toPromise()
-      .then(response=>{
-        console.log(this.repo);
-      if (response!=null){
-        response.forEach((resp) =>{
-        this.repo.push(resp);
-              
-          })}else{
-  
-}
-return  response;
-    },
+         let promise = new Promise((resolve,reject)=>{
+          return this.http.get<ApiResponse[]>(url)
+          .toPromise()
+          .then(response=>{
+            console.log(response);
+          if (response!=null){
+          response.forEach((resp) =>{
+            this.repo.push(resp);
+                  
+              })}else{
+      
+    }
+    return  response;
+        },
       error=>{
        // confirm(`not found ${user}`);
                  window.location.reload();
