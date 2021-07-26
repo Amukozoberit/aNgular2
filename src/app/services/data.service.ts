@@ -19,7 +19,7 @@ export class DataService{
    }
 
    gitUserRequest(user:string){
-     let url=`https://api.github.com/users/${user}?access_token=${environment.access_token}`;
+     let url=`https://api.github.com/users/${user}?access_token=${environment.acces_token}`;
      interface ApiResponse{
        avatar_url:string;
        login:string;
@@ -55,7 +55,7 @@ export class DataService{
      return promise
    };
    repoRequest(user:string){
-    let url=`https://api.github.com/users/${user}/repos?access_token=${environment.access_token}`
+    let url=`https://api.github.com/users/${user}/repos?access_token=${environment.acces_token}`
     this.repo=[];
     interface ApiResponse{
       name:string;
