@@ -14,7 +14,7 @@ import { Router } from '@angular/router';
 export class GitInterfaceComponent implements OnInit {
   goTourl(){
     const value=document.getElementById("btn");
-  alert(value?.innerHTML);
+  // alert(value?.innerHTML);
 this.router.navigate(['/repo','value']);
   }
   gitUser:User=new User("","",new Date());
