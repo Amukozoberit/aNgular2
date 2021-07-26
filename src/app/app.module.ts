@@ -14,6 +14,7 @@ import { ClickDirectiveDirective } from './directives/click-directive.directive'
 import { SearchComponent } from './Forms/search/search.component';
 import { AboutComponent } from './components/about/about.component';
 import { GitInterfaceComponent } from './components/git-interface/git-interface.component';
+import { NavbarComponent } from './components/navbar/navbar.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { GitInterfaceComponent } from './components/git-interface/git-interface.
     ClickDirectiveDirective,
     SearchComponent,
     AboutComponent,
-    GitInterfaceComponent
+    GitInterfaceComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,
