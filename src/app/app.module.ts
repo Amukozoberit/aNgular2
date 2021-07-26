@@ -13,6 +13,7 @@ import { PipePipe } from './pipe/pipe.pipe';
 import { ClickDirectiveDirective } from './directives/click-directive.directive';
 import { SearchComponent } from './Forms/search/search.component';
 import { AboutComponent } from './components/about/about.component';
+import { GitInterfaceComponent } from './components/git-interface/git-interface.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { AboutComponent } from './components/about/about.component';
     PipePipe,
     ClickDirectiveDirective,
     SearchComponent,
-    AboutComponent
+    AboutComponent,
+    GitInterfaceComponent
   ],
   imports: [
     BrowserModule,
