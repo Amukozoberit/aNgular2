@@ -15,6 +15,7 @@ import { SearchComponent } from './Forms/search/search.component';
 import { AboutComponent } from './components/about/about.component';
 import { GitInterfaceComponent } from './components/git-interface/git-interface.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
+import { RepoDesignComponent } from './components/repo-design/repo-design.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { NavbarComponent } from './components/navbar/navbar.component';
     SearchComponent,
     AboutComponent,
     GitInterfaceComponent,
-    NavbarComponent
+    NavbarComponent,
+    RepoDesignComponent
   ],
   imports: [
     BrowserModule,
